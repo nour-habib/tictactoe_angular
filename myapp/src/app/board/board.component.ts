@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { runInThisContext } from 'vm';
+//import { runInThisContext } from 'vm';
 
 @Component({
   selector: 'app-board',
@@ -7,9 +7,9 @@ import { runInThisContext } from 'vm';
   styleUrls: ['./board.component.scss']
 })
 export class BoardComponent implements OnInit {
-  squares: any[];
-  xIsNext: boolean;
-  winner: string;
+  squares: any[] = [];
+  xIsNext: boolean = false;
+  winner!: string;
 
   constructor() { }
 
@@ -20,7 +20,7 @@ export class BoardComponent implements OnInit {
   newGame()
   {
     this.squares = Array(9).fill(null);
-    this.winner = null;
+    this.winner = '';
     this.xIsNext = true;
 
   }
