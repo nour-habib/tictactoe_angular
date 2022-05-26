@@ -5,6 +5,16 @@ main{
 }
 
 app-square{
-    border: 1px gray solid;
+    border: 2px white solid;
+    background-color: #4ACFFF;
     height: 200px;
+    border-radius: 10px;
+
+}
+
+#outerWrapper
+{
+    margin:auto;
+    width:auto;
+    transform: translate(30%, 0);
 }
